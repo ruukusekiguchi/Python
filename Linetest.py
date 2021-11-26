@@ -7,10 +7,12 @@ access_token = '2D9XDGEZwLDpE2koEpyWXUMRDc1vjMGM647PUlCc0uR'
 headers = {'Authorization': 'Bearer ' + access_token}
 
 # for int i=0; i < 11;i += 1:と同じ意味
-for i in range(1, 11):
-    if i % 2 ==0: 
-        # メッセージを送信内容
-        message = '送信中'
-        message2 = 'だお'
-        payload = {'message': str(i) +':' + message + message2} 
-        r = requests.post(url, headers=headers, params=payload,)
+# for i in range(1, 11):
+#     if i % 2 ==0: 
+#         # メッセージを送信内容
+#         message = '送信中'
+#         payload = {'message': str(i) +':' + message} 
+#         r = requests.post(url, headers=headers, params=payload,)
+message = '送信中'
+payload = {'message':':' + message} 
+r = requests.post(url, headers=headers, params=payload,)

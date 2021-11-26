@@ -1,0 +1,12 @@
+MylineToken
+2D9XDGEZwLDpE2koEpyWXUMRDc1vjMGM647PUlCc0uR
+
+Python requestsモジュールインストール
+pip install requests
+
+Pythonバージョンアップ
+・cmdを管理者権限で開いた後
+・python -m pip install -U pip setuptools
+
+pip opencv-python(カメラ制御モジュール)
+pip install opencv-python
