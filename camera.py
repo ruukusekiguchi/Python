@@ -42,11 +42,19 @@ access_token = '2D9XDGEZwLDpE2koEpyWXUMRDc1vjMGM647PUlCc0uR'
 headers = {'Authorization': 'Bearer ' + access_token}
 files = {'imageFile': open(videoopen, 'rb')}
 
+# message = '送信中'
+# # files = {"imageFile": open(photo_path, "rb")} 
+# payload = {'message':':' + message} 
+# r = requests.post(url, headers = headers, params = payload , files = files)
+# print(r.text)
+
+
+videoopen = './おにやくりっぴぃ.png'
+files = {'imageFile': open(videoopen, 'rb')}
 message = '送信中'
-# files = {"imageFile": open(photo_path, "rb")} 
 payload = {'message':':' + message} 
 r = requests.post(url, headers = headers, params = payload , files = files)
-print(r.text)
+print(files)
 
 capture.release()
 cv2.destroyAllWindows()

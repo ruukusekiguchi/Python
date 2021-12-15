@@ -10,3 +10,12 @@ Pythonバージョンアップ
 
 pip opencv-python(カメラ制御モジュール)
 pip install opencv-python
+
+文章の表現を正規化するライブラリ
+pip install neologdn
+
+絵文字を除去するライブラリ
+pip install emoji
+
+一番参考になりそうなやつ
+https://canmakewakuwaku.com/rasppi_photo_line/
